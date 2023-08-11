@@ -1,0 +1,54 @@
+EJERCICIO 1 : Seleccionar los campos order_id, producto_id y unit_price de la tabla order_details donde el order_id
+sea igual a 46. 
+
+R//
+
+SELECT order_id, product_id, unit_price FROM northwind.order_details WHERE order_id = 46
+
+
+
+------------------------------------------------------------------------
+
+
+EJERCICIO 2: Seleccionar el campo Company de la tabla Customers donde el dato almacenado en ese
+campo finalice con la letra A.
+
+R//
+
+SELECT Company FROM northwind.customers WHERE Company LIKE '%A'
+
+
+------------------------------------------------------------------------
+
+EJERCICIO 3: Ordenar de manera descendente los registros almacenados en la tabla Products de acuerdo al campo
+producto_name.
+
+
+R// 
+
+SELECT * FROM northwind.products ORDER BY product_name desc
+
+
+------------------------------------------------------------------------
+
+
+EJERCICIO 4: Encontrar todos los apellidos (LastName) en la tabla Employees que comiencen con la letra S.
+
+
+R// 
+
+SELECT last_name FROM northwind.employees WHERE last_name LIKE 'S%'
+
+
+
+------------------------------------------------------------------------
+
+
+
+EJERCICIO 5: . Liste todos los campos de la tabla orders cuya columna shipped_date sea NULL.
+
+
+R//
+
+
+SELECT * FROM northwind.orders WHERE shipped_date IS NULL 
